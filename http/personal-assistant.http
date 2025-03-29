@@ -1,7 +1,7 @@
-POST https://heder.app.n8n.cloud/webhook-test/99257aa9-04fc-470e-8280-3688ed142e54
+POST http://localhost:5678/webhook-test/83523f17-e423-4dd6-95f0-d2bc22146381
 Content-Type: application/json
 
 {
   "chatId": "12345678",
-  "mensagem": "Bom dia"
+  "menssage": "Bom dia"
 }

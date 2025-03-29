@@ -17,10 +17,10 @@ datasource db {
 model technology {
   id          Int       @id @default(autoincrement())
   name        String
+  emphasis    Boolean   @default(false)
   description String
   image       String
-  emphasis    Boolean   @default(false)
-  Project     Project[]
+  projects    Project[]
 
   @@map("technologies")
 }
@@ -29,11 +29,11 @@ model Project {
   id           Int          @id @default(autoincrement())
   name         String
   description  String
+  type         String
   images       String[]
   level        Int
-  type         String
-  featured     Boolean      @default(false)
   repository   String
+  emphasis     Boolean      @default(false)
   technologies technology[]
 
   @@map("projects")
