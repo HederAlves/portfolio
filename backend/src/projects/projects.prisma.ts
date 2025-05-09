@@ -1,6 +1,6 @@
-import { Project } from "@core"
 import { Injectable } from "@nestjs/common"
 import { PrismaProvider } from "src/db/prisma.provider"
+import Project from "../../../core/src/projects/Project"
 
 @Injectable()
 export class ProjectPrisma {
