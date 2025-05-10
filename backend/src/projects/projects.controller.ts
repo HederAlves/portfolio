@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from "@nestjs/common"
-import { Project } from "@core"
 import { ProjectPrisma } from "./projects.prisma"
+import Project from "../../../core/src/projects/Project"
 
 @Controller("projects")
 export class ProjectController {
